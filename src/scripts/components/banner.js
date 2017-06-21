@@ -10,7 +10,7 @@ class Banner extends Component {
 		return (
 			<a id="banner" onClick={()=>pushPageState('home')}>
 				<div className="img-wrapper">
-					<img src="images/headshot.nobg.softbw.JPG" />
+					<img src="images/headshot.nobg.softbw.jpg" />
 				</div>
 				<div id="banner-text">
 					<h1>Justin Richards</h1>
