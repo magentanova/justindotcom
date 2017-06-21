@@ -1,0 +1,157 @@
+$accent: #00ADE7;
+
+* {
+	font-family: Helvetica, Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+*::selection {
+	background: $accent;
+	color: white;
+}
+
+html {
+	font-size: 16px;
+}
+
+div {
+	font-size: 0;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4,h5,h6,span,p,a,input,button {
+	font-size: 1rem;
+	font-family: 'Merriweather', serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	line-height: 2;
+	display: inline-block;
+}
+
+
+p + p {
+	display: block;
+}
+
+i.fa {
+	font-size: 2rem;
+	padding: .5rem;
+}
+
+a {
+	color: $accent;
+	text-decoration: none;
+	display: inline-block;
+	border-bottom: 1.5px solid transparent;
+	cursor: pointer; // i have some links with no href
+}
+
+a:hover {
+	// border-bottom: 1.5px solid $accent;
+	color: darken($accent,7.5);
+}
+
+// a:visited {
+// 	color: darken($accent,20);
+// }
+
+// a:visited:hover {
+// 	border-bottom: 1.5px solid darken($accent,20);
+// }
+
+#container-full.transparent {
+	opacity: 0;
+	transition: 0s opacity;
+}
+
+#container-full {
+	max-width: 750px;
+	margin: 6rem auto 0;
+	padding: 0 3rem;
+	transition: 1s opacity ease;
+}
+
+#banner {
+	display: block;
+	margin: 1.5rem auto;
+	position: relative;
+	cursor: pointer; 
+	color: $accent;
+	padding-bottom: 1rem;
+	border-bottom: 2px solid #ddd;
+
+	&:hover {
+		color: darken($accent,5)
+	}
+
+	&:hover #banner-text h2 {
+		color: $accent;
+	}
+
+	.img-wrapper {
+		display: inline-block;
+		padding: 1rem;
+		width: 125px;
+		border-radius: 50%;
+		img {
+			clip-path: circle(50%)
+		}
+	}
+	#banner-text {
+	    display: inline-block;
+	    vertical-align: top;
+	    padding-top: 2%;	
+	    margin-left: 1rem;    
+	    // position: absolute;
+	    // top: 50%;
+	    // transform: translateY(-50%);
+
+	    h1,h2 {
+	    	margin: 0;
+	    }
+
+		h1 {
+		    font-size: 2.625rem;
+		    font-weight: 400;
+		    margin-bottom: .5rem;
+		}
+		h2 {
+		    font-size: 1.625rem;
+		    font-weight: 200;
+		    color: lighten($accent,10);
+		}
+	}
+}
+
+#home-page {
+
+}
+
+#footer {
+	margin-top: 3rem;
+	.contact-icons {
+		text-align: center;
+
+		a {
+			margin: 0 1rem;
+		}
+	}
+}
+
+
