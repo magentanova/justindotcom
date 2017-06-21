@@ -13,7 +13,7 @@ class Banner extends Component {
 					<img src="images/headshot.nobg.softbw.JPG" />
 				</div>
 				<div id="banner-text">
-					<h1>justin richards</h1>
+					<h1>Justin Richards</h1>
 					<h2>developer | educator</h2>
 				</div>
 			</a>

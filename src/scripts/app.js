@@ -22,14 +22,8 @@ const app = function() {
   })
 
   var pathParts = location.pathname.split('/')
-  var pathTail = location.pathname.split('/')[pathParts[pathParts.length - 1]]
-
-  if (!pathTail) {
-  	pushPageState('home')
-  }
-  else {
-	ReactDOM.render(<Site page={pathTail} />, document.querySelector('.container'))
-  }
+  var pathTail = location.pathname.split('/')[pathParts[pathParts.length - 1]] || 'home'
+  ReactDOM.render(<Site page={pathTail} />, document.querySelector('.container'))
 }
 
 app()

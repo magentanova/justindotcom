@@ -30,8 +30,14 @@ h3 {
 	font-size: 1.5rem;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Muli', sans-serif;
+}
+
 h4,h5,h6,span,p,a,input,button {
 	font-size: 1rem;
+}
+span,p,a,input,button {
 	font-family: 'Merriweather', serif;
 }
 
