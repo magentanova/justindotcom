@@ -25,7 +25,7 @@ export const parseLinks = content => {
 		let [all,path,linkText] = m
 		children.push(content.slice(0,content.indexOf(all))) // add text that preceded link
 		// add link that was found, either an external link or an internal link.
-		if (path.includes('http')) children.push(<a target="_blank" href={path}>{linkText}</a>) 
+		if (path.includes('http') || path.charAt(0) === '/') children.push(<a key={path} target="_blank" href={path}>{linkText}</a>) 
 		else {
 			children.push(<a key={path} target="_blank" onClick={e => {
 				pushPageState(path)

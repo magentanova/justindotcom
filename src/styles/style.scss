@@ -1,4 +1,15 @@
+$textColor: #222;
 $accent: #00ADE7;
+// $accent: #8B0004;
+// $accent: #AA1202;
+// $accent: #050085;
+
+// $accentHover: lighten($accent,20);
+$accentHover: darken($accent,10);
+$h2Hover: $accent;
+// $h2Hover: lighten($accent,30);
+$lineColor: #ddd;
+
 
 * {
 	font-family: Helvetica, Arial, sans-serif;
@@ -12,6 +23,7 @@ $accent: #00ADE7;
 
 html {
 	font-size: 16px;
+	color: $textColor;
 }
 
 div {
@@ -64,21 +76,20 @@ a {
 	color: $accent;
 	text-decoration: none;
 	display: inline-block;
-	border-bottom: 1.5px solid transparent;
 	cursor: pointer; // i have some links with no href
 }
 
 a:hover {
 	// border-bottom: 1.5px solid $accent;
-	color: darken($accent,7.5);
+	color: $accentHover;
 }
 
 // a:visited {
-// 	color: darken($accent,20);
+// 	color: $accentHover;
 // }
 
 // a:visited:hover {
-// 	border-bottom: 1.5px solid darken($accent,20);
+// 	border-bottom: 1.5px solid $accentHover;
 // }
 
 #container-full.transparent {
@@ -100,23 +111,22 @@ a:hover {
 	cursor: pointer; 
 	color: $accent;
 	padding-bottom: 1rem;
-	border-bottom: 2px solid #ddd;
+	border-bottom: 2px solid $lineColor;
 
 	&:hover {
-		color: darken($accent,5)
+		color: $accentHover;
 	}
 
 	&:hover #banner-text h2 {
-		color: $accent;
+		color: $h2Hover;
 	}
 
 	.img-wrapper {
 		display: inline-block;
 		padding: 1rem;
 		width: 125px;
-		border-radius: 50%;
 		img {
-			clip-path: circle(50%)
+			border-radius: 50%;
 		}
 	}
 	#banner-text {
@@ -124,9 +134,6 @@ a:hover {
 	    vertical-align: top;
 	    padding-top: 2%;	
 	    margin-left: 1rem;    
-	    // position: absolute;
-	    // top: 50%;
-	    // transform: translateY(-50%);
 
 	    h1,h2 {
 	    	margin: 0;
@@ -147,6 +154,70 @@ a:hover {
 
 #home-page {
 
+}
+
+#projects-page {
+	.project {
+		margin-top: 2rem;
+		border-bottom: 2px solid $lineColor;
+		
+		&.project-right-image {
+			@media (min-width: 700px) {
+				.project-image {
+					float: right;
+				}
+				.project-text {
+					padding-left: 0;
+					padding-right: 2rem;
+				}
+			}
+		}
+
+		.project-text {
+		    display: inline-block;
+		    width: 80%;
+		    vertical-align: top;
+		    padding-left: 2rem;
+
+		    @media (max-width: 700px) {
+		    	width: 100%;
+		    	padding: 1rem;
+		    }
+		}
+
+		.project-image {
+			width: 20%;
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 3rem;
+
+			@media (max-width: 700px) {
+				display: block;
+				width: 50%;
+				margin: 0 auto;
+				float: none;
+			}
+		}
+	}
+}
+
+#skills-page {
+	.skill-group {
+		margin-bottom: 3rem;
+		.skill {
+			margin-left: 3rem;
+			border-bottom: 2px solid $lineColor;
+
+			h4 {
+				margin-bottom: 0;
+			}
+
+			p {
+				margin: .25rem 0;
+				color: lighten($textColor,40)
+			}
+		}
+	}
 }
 
 #footer {

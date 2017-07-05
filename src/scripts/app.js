@@ -10,7 +10,7 @@ console.log('this site was created using react.js, using vanilla js for push-sta
 console.log('it\'s run on a node/express server.')
 console.log('thanks for stopping by.')
 const app = function() {
-  document.querySelector('.container').innerHTML = `<h1>justindotcom</h1>`
+
   window.onpopstate = function(event) {
   	window.dispatchEvent(PageEvent(event.state.page))
   }
@@ -22,7 +22,7 @@ const app = function() {
   })
 
   var pathParts = location.pathname.split('/')
-  var pathTail = location.pathname.split('/')[pathParts[pathParts.length - 1]] || 'home'
+  var pathTail = pathParts[pathParts.length - 1] || 'home'
   ReactDOM.render(<Site page={pathTail} />, document.querySelector('.container'))
 }
 
