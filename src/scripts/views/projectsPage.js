@@ -24,7 +24,7 @@ const ProjectListing = (props,i) =>
 		</div>
 		<div className="project-text">
 			<h3>{props.title}</h3>
-			<p className="project-summary">{parseLinks(props.subtitle)}</p>
+			{props.subtitle.map(text => <p key={text.slice(0,19)} className="project-summary">{parseLinks(text)}</p>)}
 		</div>
 	</div>
 	
