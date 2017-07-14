@@ -24,6 +24,9 @@ $lineColor: #ddd;
 html {
 	font-size: 16px;
 	color: $textColor;
+	@media (max-width: 700px) {
+		font-size: 12px;
+	}
 }
 
 div {
@@ -102,6 +105,9 @@ a:hover {
 	margin: 6rem auto 0;
 	padding: 0 3rem;
 	transition: 1s opacity ease;
+	@media (max-width: 700px) {
+		margin-top: 4rem;
+	}
 }
 
 #banner {
@@ -125,6 +131,9 @@ a:hover {
 		display: inline-block;
 		padding: 1rem;
 		width: 125px;
+		@media (max-width: 700px) {
+			display: none;
+		} 
 		img {
 			border-radius: 50%;
 		}
@@ -186,7 +195,7 @@ a:hover {
 		    }
 
 		    .project-summary,a {
-		    	font-size: 14px;
+		    	font-size: .875rem;
 		    	line-height: 1.75;
 		    	margin-bottom: 0;
 		    }
