@@ -13,6 +13,17 @@ CONTENT[PAGE_NAMES.projects] = {
 		main: ["My work falls into two main categories: Research to improve the state-of-the art in natural language processing, and JavaScript-based web development for the client and the server. Some of the latter work was done through my role as the instructor of an immersive web-development course."],
 		projects: [
 			{
+				title: "Research",
+				subtitle: [
+					"I presented <a href='http://www.cs.columbia.edu/nlp/papers/2014/IS141206.PDF'>two</a> <a href='http://ieeexplore.ieee.org/document/6855123/'>papers</a> at international conferences in response to the BABEL challenge put out by the Department of Defense's IARPA division. My team used machine learning and natural language processing to improve the keyword-search output of our project partners at IBM.",
+					" A <a href='https://www.researchgate.net/publication/288800506_Let_me_finish_Automatic_conflict_detection_using_speaker_overlap'>third paper</a> presents a machine-learning method for detecting interpersonal conflict in recorded speech."
+					],
+				image: {
+					src: "./images/isca_logo.square.png",
+					link: ''
+				}
+			},
+			{
 				title: "Bloq",
 				subtitle: [
 					"Bloq is a complex game with simple rules. Quick to learn, tricky to master, highly addictive. <a href='http://magentanova.github.io/bloq'>Try it out.</a> Designed as a mobile game for iOS, Bloq recently completed its first round of beta testing to rave reviews.", 
@@ -32,18 +43,7 @@ CONTENT[PAGE_NAMES.projects] = {
 					src: "./images/maestro.png",
 					link: 'http://maestrodocs.com'
 				}
-			},
-			{
-				title: "Research",
-				subtitle: [
-					"I presented <a href='http://www.cs.columbia.edu/nlp/papers/2014/IS141206.PDF'>two</a> <a href='http://ieeexplore.ieee.org/document/6855123/'>papers</a> at international conferences in response to the BABEL challenge put out by the Department of Defense's IARPA division. My team used machine learning and natural language processing to improve the keyword-search output of our project partners at IBM.",
-					" A <a href='https://www.researchgate.net/publication/288800506_Let_me_finish_Automatic_conflict_detection_using_speaker_overlap'>third paper</a> presents a machine-learning method for detecting interpersonal conflict in recorded speech."
-					],
-				image: {
-					src: "./images/isca_logo.square.png",
-					link: ''
-				}
-			},
+			}
 		]
 	}
 
