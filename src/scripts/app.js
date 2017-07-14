@@ -8,6 +8,7 @@ import {PageEvent, pushPageState} from './utils.js'
 console.log('hello there.')
 console.log('this site was created using react.js, using vanilla js for push-state routing and custom css for design.')
 console.log('it\'s run on a node/express server.')
+console.log('it lives at https://github.com/magentanova/justindotcom.')
 console.log('thanks for stopping by.')
 const app = function() {
 
