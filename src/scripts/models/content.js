@@ -15,7 +15,7 @@ CONTENT[PAGE_NAMES.projects] = {
 			{
 				title: "Research",
 				subtitle: [
-					"I presented <a href='http://www.cs.columbia.edu/nlp/papers/2014/IS141206.PDF'>two</a> <a href='http://ieeexplore.ieee.org/document/6855123/'>papers</a> at international conferences in response to the BABEL challenge put out by the Department of Defense's IARPA division. My team used machine learning and natural language processing to improve the keyword-search output of our project partners at IBM.",
+					"I presented <a href='http://www.cs.columbia.edu/nlp/papers/2014/IS141206.PDF'>two</a> research <a href='http://ieeexplore.ieee.org/document/6855123/'>papers</a> at international conferences in response to the BABEL challenge put out by the Department of Defense's IARPA division. My team used machine learning and natural language processing to improve the keyword-search output of our project partners at IBM.",
 					" A <a href='https://www.researchgate.net/publication/288800506_Let_me_finish_Automatic_conflict_detection_using_speaker_overlap'>third paper</a> presents a machine-learning method for detecting interpersonal conflict in recorded speech."
 					],
 				image: {

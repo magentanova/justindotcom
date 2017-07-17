@@ -13,7 +13,14 @@ console.log('thanks for stopping by.')
 const app = function() {
 
   window.onpopstate = function(event) {
-  	window.dispatchEvent(PageEvent(event.state.page))
+    if (event.state) {
+      window.dispatchEvent(PageEvent(event.state.page))
+    }
+    else {
+      var pathParts = location.pathname.split('/')
+      var pathTail = pathParts[pathParts.length - 1] || 'home'
+      ReactDOM.render(<Site page={pathTail} />, document.querySelector('.container'))    
+    }
   }
 
   window.addEventListener('newPage', e => {
@@ -23,8 +30,16 @@ const app = function() {
   })
 
   var pathParts = location.pathname.split('/')
-  var pathTail = pathParts[pathParts.length - 1] || 'home'
-  ReactDOM.render(<Site page={pathTail} />, document.querySelector('.container'))
+  var pathTail = pathParts[pathParts.length - 1]
+  if (pathTail) {
+    ReactDOM.render(<Site page={pathTail} />, document.querySelector('.container'))    
+  }
+  else {
+    window.history.pushState({
+      page: 'home',
+    },'home','/' + 'home')
+    ReactDOM.render(<Site page={'home'} />, document.querySelector('.container'))
+  }
 }
 
 app()
