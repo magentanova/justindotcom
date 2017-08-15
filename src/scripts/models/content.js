@@ -51,7 +51,7 @@ CONTENT[PAGE_NAMES.skills] = {
 		main: [
 			"I'm all about intersections of value. The modern world is highly interdisciplinary, and I'm grateful that my own path has allowed me to combine disparate skills to address gaps I've been uniquely suited to fill. I've combined my expertise in written language with an education in computer science to make strides in natural language processing. I've combined my experience as a teacher with my programming skills to place scores of new developers in software engineering jobs as the leader of an immersive course at a code boot camp.",
 			 "My latest projects are studying Russian, learning ClojureScript and writing an anthology series for <a href='https://oddlightcomics.com'>Odd Light Comics</a>. This page, made with React, is <a href='https://github.com/magentanova/justindotcom'>my first go</a> at using push-state routing with React views.",
-			 "To accompany <a href='/images/resume.pdf'>my resume</a>, my core skills are listed below. The list is not exhaustive, so feel free to reach out if you need something done and want to see whether it's a good fit."],
+			 "To accompany <a href='/images/justin.richards.resume.pdf'>my resume</a>, my core skills are listed below. The list is not exhaustive, so feel free to reach out if you need something done and want to see whether it's a good fit."],
 		skillGroups: [
 			{
 				heading: "Tech",
