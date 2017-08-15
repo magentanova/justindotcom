@@ -1,13 +1,13 @@
 $textColor: #222;
-$accent: #00ADE7;
-// $accent: #8B0004;
+// $accent: #00ADE7;
+$accent: #8B0004;
 // $accent: #AA1202;
 // $accent: #050085;
 
-// $accentHover: lighten($accent,20);
-$accentHover: darken($accent,10);
+$accentHover: lighten($accent,20);
+// $accentHover: darken($accent,10);
 $h2Hover: $accent;
-// $h2Hover: lighten($accent,30);
+$h2Hover: lighten($accent,30);
 $lineColor: #ddd;
 
 
